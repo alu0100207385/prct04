@@ -26,3 +26,18 @@ def pausa
     end
 end
 
+#Carga la matriz
+def cargar_Matriz(matrix)
+  for i in(0..matrix.length-1)
+	for x in(0..matrix[0].length-1)
+		puts "Valor de la fila #{i}, columna #{x}"			
+		STDOUT.flush
+		matrix[i][x]=gets.chomp
+		x=x+1
+	end
+	puts "\n"
+	i=i+1
+  end
+end
+
+
