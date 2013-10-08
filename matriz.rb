@@ -41,3 +41,15 @@ def cargar_Matriz(matrix)
 end
 
 
+#Muestra una matriz
+def mostrar_Matriz(matrix)
+  for i in(0..matrix.length-1)
+    for x in(0..matrix[0].length-1)
+      print "#{matrix[i][x]}|"
+	x = x+1
+    end
+    puts "\n"
+    i=i+1
+  end
+end
+
